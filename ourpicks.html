@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CineAura - Our Picks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace, monospace;
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #3f2f86;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #03c4ff;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      background-color: #3f2f86;
+      border-radius: 4px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .person-picks {
+      width: 30%;
+      min-width: 250px;
+    }
+
+    .person-picks h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .movie {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .movie:hover {
+      transition: 1s ease;
+      transform: scale(1.1);
+    }
+
+    .movie img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .movie p {
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #3f2f86;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .socials img {
+      width: 24px;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 768px) {
+      .movie {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      } 
+
+    .person-picks {
+        width: 80%;
+      }
+    }
+   /*ChangesFromMiole*/
+ .HoverEffect{
+      transition: 0.5s ease;
+    }
+.HoverEffect:hover {
+  transform: scale(1.20);
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+}
+    #HoverEffectStay{
+    font-weight: bold;
+    transform: scale(1.20);
+    background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">CineAura 🎬</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search Movies">
+        </div>
+        <div class="nav-links">
+          <a href="home.html"><p class="HoverEffect">HOME</p></a>
+      <a href="ourpicks.html"><p class="HoverEffect" id="HoverEffectStay">OUR PICKS</p></a>
+      <a href="aboutus.html"><p class="HoverEffect">ABOUT US</p></a>
+      <a href="request.html"><p class="HoverEffect">REQUEST</p></a>
+      <a href="login.html"><p class="HoverEffect">LOGOUT</p></a>
+        </div>
+      </div>
+
+  <div class="container">
+    <div class="person-picks" style="background-color: #2c2c3f; padding: 20px; border-radius: 12px;">
+      <h2>De Guzman's Picks</h2>
+      <div class="movie">
+        <img src="images/endgame.jpg" alt="Endgame">
+        <p>Avengers: Endgame</p>
+      </div>
+      <div class="movie">
+        <img src="images/infinitywar.jpg" alt="Infinity War">
+        <p>Avengers: Infinity War</p>
+      </div>
+      <div class="movie">
+        <img src="images/ageofultron.jpg" alt="Age of Ultron">
+        <p>Avengers: Age of Ultron</p>
+      </div>
+      <div class="movie">
+        <img src="images/avengers.jpg" alt="The Avengers">
+        <p>The Avengers</p>
+      </div>
+    </div>
+
+    <div class="person-picks" style="background-color: #2c2c3f; padding: 20px; border-radius: 12px;">
+      <h2>Miole's Picks</h2>
+      <div class="movie">
+        <img src="images/praybeyt.png" alt="Praybeyt Benjamin">
+        <p>Praybeyt Benjamin</p>
+      </div>
+      <div class="movie">
+        <img src="images/enteng.jpg" alt="Enteng ng Ina mo">
+        <p>Enteng Ng Ina Mo</p>
+      </div>
+      <div class="movie">
+        <img src="images/srr.jpg" alt="Shake Rattle & Roll 2k5">
+        <p>Shake Rattle & Roll 2k5</p>
+      </div>
+      <div class="movie">
+        <img src="images/hlg.jpg" alt="Hello, Love, Goodbye">
+        <p>Hello, Love, Goodbye</p>
+      </div>
+    </div>
+
+    <div class="person-picks" style="background-color: #2c2c3f; padding: 20px; border-radius: 12px;">
+      <h2>Mojica's Picks</h2>
+      <div class="movie">
+        <img src="images/theprestige.jpg" alt="The Prestige">
+        <p>The Prestige</p>
+      </div>
+      <div class="movie">
+        <img src="images/se7en.jpg" alt="Se7en">
+        <p>Se7en</p>
+      </div>
+      <div class="movie">
+        <img src="images/cars.jpg" alt="Cars">
+        <p>Cars</p>
+      </div>
+      <div class="movie">
+        <img src="images/rat.jpg" alt="Ratatouille">
+        <p>Ratatouille</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Our Socials:</p>
+    <div class="socials">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

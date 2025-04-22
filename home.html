@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CineAura - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace, monospace;
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #3f2f86;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #03c4ff;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      background-color: #3f2f86;
+      border-radius: 4px;
+    }
+
+    .section-title {
+      margin: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .movie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .movie {
+      width: 150px;
+      text-align: center;
+    }
+
+    .movie:hover {
+      transition: 1s ease;
+      transform: scale(1.1);
+    }
+
+    .movie img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #3f2f86;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .socials img {
+      width: 24px;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 768px) {
+      .movie {
+        width: 45%;
+      }
+    }
+
+    /*ChangesFromMiole*/
+ .HoverEffect{
+      transition: 0.5s ease;
+    }
+.HoverEffect:hover {
+  transform: scale(1.20);
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+}
+    #HoverEffectStay{
+    font-weight: bold;
+    transform: scale(1.20);
+    background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="MarginIncrease">
+  <div class="navbar">
+    <div class="logo">CineAura 🎬</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Movies">
+    </div>
+    <div class="nav-links">
+      <a href="home.html"><p class="HoverEffect" id="HoverEffectStay">HOME</p></a>
+      <a href="ourpicks.html"><p class="HoverEffect">OUR PICKS</p></a>
+      <a href="aboutus.html"><p class="HoverEffect">ABOUT US</p></a>
+      <a href="request.html"><p class="HoverEffect">REQUEST</p></a>
+      <a href="login.html"><p class="HoverEffect">LOGOUT</p></a>
+    </div>
+  </div>
+  </header>
+
+  <div class="section-title">FRESH MOVIES</div>
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="images/avatar.jpg" alt="Avatar">
+      <div>Avatar</div>
+    </div>
+    <div class="movie">
+      <img src="images/creator.jpg" alt="The Creator">
+      <div>The Creator</div>
+    </div>
+    <div class="movie">
+      <img src="images/mi.jpg" alt="MI">
+      <div>Mission Impossible</div>
+    </div>
+    <div class="movie">
+      <img src="images/badboys.jpg" alt="Bad Boys">
+      <div>Bad Boys</div>
+    </div>
+    <div class="movie">
+      <img src="images/gladiator2.jpg" alt="Gladiator 2">
+      <div>Gladiator 2</div>
+    </div>
+    <div class="movie">
+      <img src="images/ministry.jpg" alt="Ministry">
+      <div>The Ministry</div>
+    </div>
+    <div class="movie">
+      <img src="images/furiosa.jpg" alt="Furiosa">
+      <div>Furiosa</div>
+    </div>
+    <div class="movie">
+      <img src="images/alienromulus.jpg" alt="Alien Romulus">
+      <div>Alien Romulus</div>
+    </div>
+    <div class="movie">
+      <img src="images/oppenheimer.jpg" alt="Oppenheimer">
+      <div>Oppenheimer</div>
+    </div>
+    <div class="movie">
+      <img src="images/killer.jpg" alt="The Killer">
+      <div>The Killer</div>
+    </div>
+    <div class="movie">
+      <img src="images/asteroidcity.jpg" alt="Asteroid City">
+      <div>Asteroid City</div>
+    </div>
+  </div>
+
+  <div class="section-title">MORE</div>
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="images/mazerunner.jpg" alt="Maze Runner">
+      <div>The Maze Runner</div>
+    </div>
+    <div class="movie">
+      <img src="images/nun.jpg" alt="The Nun">
+      <div>The Nun</div>
+    </div>
+    <div class="movie">
+      <img src="images/interstellar.jpg" alt="Interstellar">
+      <div>Interstellar</div>
+    </div>
+    <div class="movie">
+      <img src="images/blade.png" alt="Blade Runner">
+      <div>Blade Runner 2049</div>
+    </div>
+    <div class="movie">
+      <img src="images/madmax.jpg" alt="Mad Max">
+      <div>Mad Max Fury Road</div>
+    </div>
+    <div class="movie">
+      <img src="images/aliencovenant.jpg" alt="Alien Covenant">
+      <div>Alien Covenant</div>
+    </div>
+    <div class="movie">
+      <img src="images/martian.jpg" alt="Martian">
+      <div>The Martian</div>
+    </div>
+    <div class="movie">
+      <img src="images/alita.png" alt="Alita">
+      <div>Alita Battle Angel</div>
+    </div>
+    <div class="movie">
+      <img src="images/air.png" alt="Air">
+      <div>Air</div>
+    </div>
+    <div class="movie">
+      <img src="images/granturismo.jpeg" alt="Gran Turismo">
+      <div>Gran Turismo</div>
+    </div>
+    <div class="movie">
+      <img src="images/napoleon.jpg" alt="Napoleon">
+      <div>Napoleon</div>
+    </div>
+  </div>
+
+  <div class="section-title">ROMANCE</div>
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="images/lalaland.png" alt="La La Land">
+      <div>La La Land</div>
+    </div>
+    <div class="movie">
+      <img src="images/thenotebook.jpg" alt="The Notebook">
+      <div>The Notebook</div>
+    </div>
+    <div class="movie">
+      <img src="images/abouttime.jpg" alt="About Time">
+      <div>About Time</div>
+    </div>
+    <div class="movie">
+      <img src="images/ghost.jpg" alt="Ghost">
+      <div>Ghost</div>
+    </div>
+    <div class="movie">
+      <img src="images/titanic.png" alt="Titanic">
+      <div>Titanic</div>
+    </div>
+    <div class="movie">
+      <img src="images/nottinghill.jpg" alt="Notting Hill">
+      <div>Notting Hill</div>
+    </div>
+    <div class="movie">
+      <img src="images/firstdates.jpg" alt="50 First Dates">
+      <div>50 First Dates</div>
+    </div>
+    <div class="movie">
+      <img src="images/weddingsinger.jpg" alt="Wedding Singer">
+      <div>The Wedding Singer</div>
+    </div>
+    <div class="movie">
+      <img src="images/prettywoman.jpg" alt="Pretty Woman">
+      <div>Pretty Woman</div>
+    </div>
+    <div class="movie">
+      <img src="images/sleeplessinseattle.jpg" alt="Sleepless in Seattle">
+      <div>Sleepless in Seattle</div>
+    </div>
+    <div class="movie">
+      <img src="images/clueless.png" alt="Clueless">
+      <div>Clueless</div>
+    </div>
+  </div>
+
+  <div class="section-title">SCI-FI</div>
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="images/arrival.jpg" alt="Arrival">
+      <div>Arrival</div>
+    </div>
+    <div class="movie">
+      <img src="images/inception.jpg" alt="Inception">
+      <div>Inception</div>
+    </div>
+    <div class="movie">
+      <img src="images/interstellar.jpg" alt="Interstellar">
+      <div>Interstellar</div>
+    </div>
+    <div class="movie">
+      <img src="images/blade.png" alt="Blade Runner">
+      <div>Blade Runner 2049</div>
+    </div>
+    <div class="movie">
+      <img src="images/minorityreport.jpg" alt="Minority Report">
+      <div>Minority Report</div>
+    </div>
+    <div class="movie">
+      <img src="images/sourcecode.jpg" alt="Source Code">
+      <div>Source Code</div>
+    </div>
+    <div class="movie">
+      <img src="images/tenet.jpg" alt="tenet">
+      <div>Tenet</div>
+    </div>
+    <div class="movie">
+      <img src="images/edgeoftomorrow.jpg" alt="Edge of Tomorrow">
+      <div>Edge of Tomorrow</div>
+    </div>
+    <div class="movie">
+      <img src="images/2001.png" alt="2001">
+      <div>2001: A Space Odyssey</div>
+    </div>
+    <div class="movie">
+      <img src="images/readyplayerone.png" alt="Ready Player One">
+      <div>Ready Player One</div>
+    </div>
+    <div class="movie">
+      <img src="images/passengers.jpg" alt="Passengers">
+      <div>Passengers</div>
+    </div>
+  </div>
+
+  <div class="section-title">COMEDY</div>
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="images/superbad.png" alt="Superbad">
+      <div>Superbad</div>
+    </div>
+    <div class="movie">
+      <img src="images/lebowski.jpg" alt="The Big Lebowski">
+      <div>The Big Lebowski</div>
+    </div>
+    <div class="movie">
+      <img src="images/grownups.jpg" alt="Grown Ups">
+      <div>Grown Ups</div>
+    </div>
+    <div class="movie">
+      <img src="images/dumb.jpg" alt="Dumb and Dumber">
+      <div>Dumb and Dumber</div>
+    </div>
+    <div class="movie">
+      <img src="images/stepbrothers.jpg" alt="Step Brothers">
+      <div>Step Brothers</div>
+    </div>
+    <div class="movie">
+      <img src="images/talladeganights.jpg" alt="Talladega Nights">
+      <div>Talladega Nights: The Ballad of Ricky Bobby</div>
+    </div>
+    <div class="movie">
+      <img src="images/hangover.jpg" alt="The Hangover">
+      <div>The Hangover</div>
+    </div>
+    <div class="movie">
+      <img src="images/40yearold.jpg" alt="40 Year Old">
+      <div>The 40 Year Old Virgin</div>
+    </div>
+    <div class="movie">
+      <img src="images/forgettingsm.jpg" alt="Forgetting Sarah Marshall">
+      <div>Forgetting Sarah Marshall</div>
+    </div>
+    <div class="movie">
+      <img src="images/themillers.jpg" alt="We're the Millers">
+      <div>We're the Millers</div>
+    </div>
+    <div class="movie">
+      <img src="images/nohardfeelings.png" alt="No Hard Feelings">
+      <div>No Hard Feelings</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Our Socials:</p>
+    <div class="socials">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

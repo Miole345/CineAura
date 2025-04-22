@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CineAura - Request</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace, monospace;
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #3f2f86;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #03c4ff;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      background-color: #3f2f86;
+      border-radius: 4px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #000;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #5a4fcf;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .movie {
+        width: 45%;
+      }
+    }
+    /*ChangesFromMiole*/
+ .HoverEffect{
+      transition: 0.5s ease;
+    }
+.HoverEffect:hover {
+  transform: scale(1.20);
+  font-weight: bold;
+  background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+}
+    #HoverEffectStay{
+    font-weight: bold;
+    transform: scale(1.20);
+    background-color: #1a1a2e;
+  border-radius: 3px;
+  box-shadow: 0 0 0 5px #1a1a2e;
+    }
+  </style>
+
+  <div class="navbar">
+    <div class="logo">CineAura 🎬</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Movies">
+    </div>
+    <div class="nav-links">
+      <a href="home.html"><p class="HoverEffect">HOME</p></a>
+      <a href="ourpicks.html"><p class="HoverEffect">OUR PICKS</p></a>
+      <a href="aboutus.html"><p class="HoverEffect">ABOUT US</p></a>
+      <a href="request.html"><p class="HoverEffect" id="HoverEffectStay">REQUEST</p></a>
+      <a href="login.html"><p class="HoverEffect">LOGOUT</p></a>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>Request a Movie</h2>
+    <form action="home.html" method="get">
+      <label for="movie">Movie Title</label>
+      <input type="text" id="movie" name="movie" placeholder="Movie you want to request">
+
+      <label for="details">Additional Notes</label>
+      <textarea id="details" name="details" rows="5" placeholder="Write the details of the movie you want to request"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+
+</body>
+</html>
